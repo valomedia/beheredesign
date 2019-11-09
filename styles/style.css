@@ -1,0 +1,30 @@
+/*
+ * Styles for the web site.
+ */
+
+html {
+    font-size: 14pt;
+}
+
+* {
+    line-height: 1.2;
+    margin: 0;
+}
+
+.browserupgrade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #d59b20;
+    color: #fff;
+    padding: 0.4em 0.4em;
+    margin: 0;
+    z-index: 999;
+}
+
+.browserupgrade > a {
+    color: #fff;
+    font-weight: bold;
+}
+

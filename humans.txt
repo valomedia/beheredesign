@@ -1,0 +1,24 @@
+#
+# The humans responsible & technology colophon
+#
+# humanstxt.org/
+#
+
+# TEAM
+
+    Jonathan Engelland  -- Geschäftsführer  -- @jonathan_engelland
+    Jean-Pierre Höhmann -- Webentwickler    -- @nuvandapv
+
+# THANKS
+
+    Malte Jesgarzewsky
+
+# TECHNOLOGY COLOPHON
+
+    CSS3,
+    HTML5
+    jQuery,
+    Modernizr,
+    Normalize.css,
+    HTML5 Boilerplate,
+    GitHub Pages
