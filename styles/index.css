@@ -2,18 +2,340 @@
  * Styles for the landing page.
  */
 
-#legal, footer {
-    display: none;
+html {
+    background-color: black;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
-h1 object {
-    height: 100vh;
+a {
+    color: inherit;
+}
+
+main {
+    animation-name: fade;
+    animation-duration: 800ms;
+    animation-delay: 2000ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+footer {
     position: fixed;
+    z-index: 10;
+    background-color: white;
+    width: 100vw;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    border-top-color: #f8f8f8;
+    border-top-style: solid;
+    border-top-width: 1px;
+    font-size: .8em;
+}
+
+footer p, #landing p, header p {
+    margin: 0;
+    font-weight: 100;
+    font-style: italic;
+}
+
+footer p {
+    color: #999999;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:last-child {
+    float: right;
+}
+
+.brand, header a {
+    text-decoration: none;
+}
+
+#legal {
+    margin-top: 100vh;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav li a {
+    color: inherit;
+}
+
+h2 {
+    border-bottom-width: 2px;
+}
+
+h3 {
+    border-bottom-width: 1px;
+}
+
+h2, h3 {
+    margin-left: -.2em;
+    margin-right: -.2em;
+    padding-left: .2em;
+    padding-right: .2em;
+    border-bottom-style: solid;
+    border-bottom-color: #888888;
+}
+
+footer, header {
+    padding: .5em;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    box-sizing: border-box;
     top: 0;
+    left: 0;
+    text-align: right;
+}
+
+header img {
+    height: 1.2em;
+}
+
+#landing {
+    position: absolute;
+    top: 50vh;
     left: 50vw;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-family: "acumin-pro-wide", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #ca8a1a;
+    margin: 0;
+    line-height: 1;
+}
+
+#ring, #circle-black, #circle-white {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+#ring, #circle-black, #circle-white {
+    border-radius: 50%;
 }
 
 ul {
     list-style: none;
+}
+
+#ring {
+    z-index: -10;
+    border-style: solid;
+    animation-name: popup;
+    animation-duration: 400ms;
+    animation-delay: 1200ms;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+#circle-black {
+    z-index: -20;
+    background-color: black;
+    animation-name: implode;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+}
+
+#circle-white {
+    z-index: -30;
+    background-color: white;
+    animation-name: explode;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-delay: 400ms;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes popup {
+     0% {
+         transform: translate(-50%, -50%) scale(0);
+     }
+
+     70% {
+         transform: translate(-50%, -50%) scale(1.05);
+     }
+
+     80% {
+         transform: translate(-50%, -50%) scale(1.02);
+     }
+
+     90% {
+         transform: translate(-50%, -50%) scale(1.01);
+     }
+
+     100% {
+         transform: translate(-50%, -50%) scale(1);
+     }
+ }
+
+@media (orientation: landscape) {
+    h1 {
+        font-size: 14vh;
+    }
+
+    #ring {
+        width: 46vh;
+        height: 46vh;
+    }
+
+@keyframes implode {
+    from {
+            width: 22vh;
+            height: 22vh;
+        }
+
+        to {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @keyframes explode {
+        from {
+            width: 24vh;
+            height: 24vh;
+        }
+
+        to {
+            width: 150vw;
+            height: 150vw;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 28vw;
+    }
+
+    #ring {
+        width: 92vw;
+        height: 92vw;
+    }
+
+    @keyframes implode {
+        from {
+            width: 44vw;
+            height: 44vw;
+        }
+
+        to {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    @keyframes explode {
+        from {
+            width: 48vw;
+            height: 48vw;
+        }
+
+        to {
+            width: 150vh;
+            height: 150vh;
+        }
+    }
+}
+
+@media (max-device-width: 1200px) {
+    #ring {
+        border-width: 2px;
+    }
+}
+
+@media (min-device-width: 1201px) {
+    #ring {
+        border-width: 3px;
+    }
+}
+
+@media (min-device-width: 360px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav li::after {
+        content: '•';
+    }
+
+    nav li:last-child::after {
+        content: '';
+    }
+}
+
+@media (max-device-width: 359px) {
+    nav ul {
+        list-style: initial;
+    }
+}
+
+@media (min-device-width: 1280px) {
+    #legal::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #legal {
+        padding: 5vw;
+        box-sizing: border-box;
+    }
+
+    article {
+        float: left;
+        width: 30vw;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+
+    article:first-of-type {
+        padding-left: 0;
+    }
+
+    article:last-of-type {
+        padding-right: 0;
+    }
+}
+
+@media (min-device-width: 600px) and (max-device-width: 1279px) {
+    #legal {
+        width: 600px;
+        margin: auto;
+    }
 }

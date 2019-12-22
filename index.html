@@ -16,7 +16,7 @@ Landing page.
     <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1'>
     <link rel='manifest' href='site.webmanifest'>
     <link rel='apple-touch-icon' href='icon.png'>
-    <meta name='theme-color' content='#fafafa'>
+    <meta name='theme-color' content='#ffffff'>
 
     <!-- Common styles -->
     <link rel='stylesheet' href='styles/normalize.css'>
@@ -37,38 +37,40 @@ Landing page.
 </p>
 <![endif]-->
 
+<div id='preloader'>
+    <div id='ring'></div>
+    <div id='circle-black'></div>
+    <div id='circle-white'></div>
+</div>
+
 <main>
     <header>
-        <p>&nbsp;</p>
-    </header>
-    <section>
-        <h1>&nbsp;</h1>
         <p>
-            <!-- TODO -->
-            <!--
             <a href='//instagram.com/beheredesign'>
-                <img alt='follow us' src='#'>
+                <img alt='Instagram' src='images/followus.svg'>
             </a>
-            -->
         </p>
+    </header>
+    <section id='landing'>
+        <h1>behere</h1>
     </section>
     <section id='legal'>
-        <h1>Legal</h1>
+        <h2>Rechtliches</h2>
         <nav>
             <ul>
                 <li>
                     <a href='#imprint'>Impressum</a>
                 </li>
                 <li>
-                    <a href='#disclaimer'>Haftungsausschluss</a>
+                    <a href='#disclaimer'>Haftung</a>
                 </li>
                 <li>
-                    <a href='#data-protection'>Datenschutzerklärung</a>
+                    <a href='#data-protection'>Datenschutz</a>
                 </li>
             </ul>
         </nav>
         <article id='imprint'>
-            <h2>Impressum</h2>
+            <h3>Impressum</h3>
             <p>
                 Valo.Media UG (haftungsbeschränkt)
                 Usbeckstraße 25
@@ -86,8 +88,8 @@ Landing page.
             </p>
         </article>
         <article id='disclaimer'>
-            <h2>Haftungsausschluss</h2>
-            <h3>Haftung für Inhalte</h3>
+            <h3>Haftungsausschluss</h3>
+            <h4>Haftung für Inhalte</h4>
             <p>
                 Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
                 allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
@@ -100,7 +102,7 @@ Landing page.
                 einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden
                 wir diese Inhalte umgehend entfernen.
             </p>
-            <h3>Haftung für Links</h3>
+            <h4>Haftung für Links</h4>
             <p>
                 Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
                 Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
@@ -113,7 +115,7 @@ Landing page.
                 Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links
                 umgehend entfernen.
             </p>
-            <h3>Urheberrecht</h3>
+            <h4>Urheberrecht</h4>
             <p>
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
                 Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
@@ -128,7 +130,7 @@ Landing page.
             </p>
         </article>
         <article id='data-protection'>
-            <h2>Datenschutzerklärung</h2>
+            <h3>Datenschutzerklärung</h3>
             <p>
                 Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen
                 Stellenwert für die Geschäftsleitung der Valo.Media UG (haftungsbeschränkt). Eine Nutzung der
@@ -157,7 +159,7 @@ Landing page.
                 personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu
                 übermitteln.
             </p>
-            <h3>1. Begriffsbestimmungen</h3>
+            <h4>1. Begriffsbestimmungen</h4>
             <p>
                 Die Datenschutzerklärung der Valo.Media UG (haftungsbeschränkt) beruht auf den Begrifflichkeiten, die
                 durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung
@@ -168,7 +170,9 @@ Landing page.
             <p>Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:</p>
             <ul>
                 <li>
-                    <h4>a) personenbezogene Daten</h4>
+                    <p>
+                        <strong>a) personenbezogene Daten</strong>
+                    </p>
                     <p>
                         Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder
                         identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Als
@@ -180,14 +184,18 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>b) betroffene Person</h4>
+                    <p>
+                        <strong>b) betroffene Person</strong>
+                    </p>
                     <p>
                         Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren
                         personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden.
                     </p>
                 </li>
                 <li>
-                    <h4>c) Verarbeitung</h4>
+                    <p>
+                        <strong>c) Verarbeitung</strong>
+                    </p>
                     <p>
                         Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder
                         jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das
@@ -198,14 +206,18 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>d) Einschränkung der Verarbeitung</h4>
+                    <p>
+                        <strong>d) Einschränkung der Verarbeitung</strong>
+                    </p>
                     <p>
                         Einschränkung der Verarbeitung ist die Markierung gespeicherter personenbezogener Daten mit dem
                         Ziel, ihre künftige Verarbeitung einzuschränken.
                     </p>
                 </li>
                 <li>
-                    <h4>e) Profiling</h4>
+                    <p>
+                        <strong>e) Profiling</strong>
+                    </p>
                     <p>
                         Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin
                         besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte,
@@ -216,7 +228,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>f) Pseudonymisierung</h4>
+                    <p>
+                        <strong>f) Pseudonymisierung</strong>
+                    </p>
                     <p>
                         Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, auf welche die
                         personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer
@@ -227,7 +241,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>g) Verantwortlicher oder für die Verarbeitung Verantwortlicher</h4>
+                    <p>
+                        <strong>g) Verantwortlicher oder für die Verarbeitung Verantwortlicher</strong>
+                    </p>
                     <p>
                         Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder juristische
                         Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die
@@ -238,14 +254,18 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>h) Auftragsverarbeiter</h4>
+                    <p>
+                        <strong>h) Auftragsverarbeiter</strong>
+                    </p>
                     <p>
                         Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere
                         Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
                     </p>
                 </li>
                 <li>
-                    <h4>i) Empfänger</h4>
+                    <p>
+                        <strong>i) Empfänger</strong>
+                    </p>
                     <p>
                         Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle,
                         der personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei ihr um einen
@@ -255,7 +275,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>j) Dritter</h4>
+                    <p>
+                        <strong>j) Dritter</strong>
+                    </p>
                     <p>
                         Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle
                         außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den Personen,
@@ -264,7 +286,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>k) Einwilligung</h4>
+                    <p>
+                        <strong>k) Einwilligung</strong>
+                    </p>
                     <p>
                         Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in
                         informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung
@@ -274,7 +298,7 @@ Landing page.
                     </p>
                 </li>
             </ul>
-            <h3>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h3>
+            <h4>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h4>
             <p>
                 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der
                 Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem
@@ -291,7 +315,7 @@ Landing page.
                 E-Mail: office@valo.media<br>
                 Website: valo.media
             </p>
-            <h3>3. Cookies</h3>
+            <h4>3. Cookies</h4>
             <p>
                 Die Internetseiten der Valo.Media UG (haftungsbeschränkt) verwenden Cookies. Cookies sind Textdateien,
                 welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden.
@@ -328,7 +352,7 @@ Landing page.
                 Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser, sind unter
                 Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar.
             </p>
-            <h3>4. Erfassung von allgemeinen Daten und Informationen</h3>
+            <h4>4. Erfassung von allgemeinen Daten und Informationen</h4>
             <p>
                 Die Internetseite der Valo.Media UG (haftungsbeschränkt) erfasst mit jedem Aufruf der Internetseite durch
                 eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und
@@ -355,7 +379,7 @@ Landing page.
                 Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen
                 Daten gespeichert.
             </p>
-            <h3>5. Kontaktmöglichkeit über die Internetseite</h3>
+            <h4>5. Kontaktmöglichkeit über die Internetseite</h4>
             <p>
                 Die Internetseite der Valo.Media UG (haftungsbeschränkt) enthält aufgrund von gesetzlichen Vorschriften
                 Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare
@@ -367,7 +391,7 @@ Landing page.
                 Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es
                 erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte.
             </p>
-            <h3>6. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h3>
+            <h4>6. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h4>
             <p>
                 Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen
                 Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies
@@ -379,10 +403,12 @@ Landing page.
                 einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen
                 Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht.
             </p>
-            <h3>7. Rechte der betroffenen Person</h3>
+            <h4>7. Rechte der betroffenen Person</h4>
             <ul>
                 <li>
-                    <h4>a) Recht auf Bestätigung</h4>
+                    <p>
+                        <strong>a) Recht auf Bestätigung</strong>
+                    </p>
                     <p>
                         Jede betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber eingeräumte
                         Recht, von dem für die Verarbeitung Verantwortlichen eine Bestätigung darüber zu verlangen, ob
@@ -392,7 +418,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>b) Recht auf Auskunft</h4>
+                    <p>
+                        <strong>b) Recht auf Auskunft</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von dem für die Verarbeitung
@@ -448,7 +476,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>c) Recht auf Berichtigung</h4>
+                    <p>
+                        <strong>c) Recht auf Berichtigung</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, die unverzügliche Berichtigung sie
@@ -463,7 +493,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>d) Recht auf Löschung (Recht auf Vergessen werden)</h4>
+                    <p>
+                        <strong>d) Recht auf Löschung (Recht auf Vergessen werden)</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen zu verlangen, dass
@@ -520,7 +552,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>e) Recht auf Einschränkung der Verarbeitung</h4>
+                    <p>
+                        <strong>e) Recht auf Einschränkung der Verarbeitung</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen die Einschränkung der
@@ -557,7 +591,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>f) Recht auf Datenübertragbarkeit</h4>
+                    <p>
+                        <strong>f) Recht auf Datenübertragbarkeit</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, die sie betreffenden personenbezogenen Daten,
@@ -584,7 +620,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>g) Recht auf Widerspruch</h4>
+                    <p>
+                        <strong>g) Recht auf Widerspruch</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, aus Gründen, die sich aus ihrer besonderen
@@ -625,7 +663,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>h) Automatisierte Entscheidungen im Einzelfall einschließlich Profiling</h4>
+                    <p>
+                        <strong>h) Automatisierte Entscheidungen im Einzelfall einschließlich Profiling</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, nicht einer ausschließlich auf einer
@@ -654,7 +694,9 @@ Landing page.
                     </p>
                 </li>
                 <li>
-                    <h4>i) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung</h4>
+                    <p>
+                        <strong>i) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung</strong>
+                    </p>
                     <p>
                         Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen
                         Richtlinien- und Verordnungsgeber gewährte Recht, eine Einwilligung zur Verarbeitung
@@ -666,7 +708,7 @@ Landing page.
                     </p>
                 </li>
             </ul>
-            <h3>8. Datenschutzbestimmungen zu Einsatz und Verwendung von Facebook</h3>
+            <h4>8. Datenschutzbestimmungen zu Einsatz und Verwendung von Facebook</h4>
             <p>
                 Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten des Unternehmens
                 Facebook integriert. Facebook ist ein soziales Netzwerk.
@@ -722,7 +764,9 @@ Landing page.
                 ermöglichen, eine Datenübermittlung an Facebook zu unterdrücken. Solche Applikationen können durch die
                 betroffene Person genutzt werden, um eine Datenübermittlung an Facebook zu unterdrücken.
             </p>
-            <h4>9. Datenschutzbestimmungen zu Einsatz und Verwendung von Matomo</h4>
+            <p>
+                <strong>9. Datenschutzbestimmungen zu Einsatz und Verwendung von Matomo</strong>
+            </p>
             <p>
                 Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite die Komponente Matomo integriert.
                 Matomo ist ein Open-Source-Softwaretool zur Web-Analyse. Web-Analyse ist die Erhebung, Sammlung und
@@ -781,7 +825,9 @@ Landing page.
                 Weitere Informationen und die geltenden Datenschutzbestimmungen von Matomo können unter
                 https://matomo.org/privacy/ abgerufen werden.
             </p>
-            <h4>10. Datenschutzbestimmungen zu Einsatz und Verwendung von YouTube</h4>
+            <p>
+                <strong>10. Datenschutzbestimmungen zu Einsatz und Verwendung von YouTube</strong>
+            </p>
             <p>
                 Der für die Verarbeitung Verantwortliche hat auf dieser Internetseite Komponenten von YouTube integriert.
                 YouTube ist ein Internet-Videoportal, dass Video-Publishern das kostenlose Einstellen von Videoclips und
@@ -825,7 +871,7 @@ Landing page.
                 https://www.google.de/intl/de/policies/privacy/ abrufbar sind, geben Aufschluss über die Erhebung,
                 Verarbeitung und Nutzung personenbezogener Daten durch YouTube und Google.
             </p>
-            <h3>11. Rechtsgrundlage der Verarbeitung</h3>
+            <h4>11. Rechtsgrundlage der Verarbeitung</h4>
             <p>
                 Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen
                 wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung
@@ -852,26 +898,30 @@ Landing page.
                 berechtigtes Interesse anzunehmen sein könnte, wenn die betroffene Person ein Kunde des Verantwortlichen
                 ist (Erwägungsgrund 47 Satz 2 DS-GVO).
             </p>
-            <h3>
+            <h4>
                 12. Berechtigte Interessen an der Verarbeitung, die von dem Verantwortlichen oder einem Dritten verfolgt
                 werden
-            </h3>
+            </h4>
             <p>
                 Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO ist unser berechtigtes
                 Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter
                 und unserer Anteilseigner.</p>
 
-            <h4>13. Dauer, für die die personenbezogenen Daten gespeichert werden</h4>
+            <p>
+                <strong>13. Dauer, für die die personenbezogenen Daten gespeichert werden</strong>
+            </p>
             <p>
                 Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige gesetzliche
                 Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten routinemäßig gelöscht, sofern
                 sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind.
             </p>
-            <h4>
-                14. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen Daten;
-                Erforderlichkeit für den Vertragsabschluss; Verpflichtung der betroffenen Person, die personenbezogenen
-                Daten bereitzustellen; mögliche Folgen der Nichtbereitstellung
-            </h4>
+            <p>
+                <strong>
+                    14. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen Daten;
+                    Erforderlichkeit für den Vertragsabschluss; Verpflichtung der betroffenen Person, die
+                    personenbezogenen Daten bereitzustellen; mögliche Folgen der Nichtbereitstellung
+                </strong>
+            </p>
             <p>
                 Wir klären Sie darüber auf, dass die Bereitstellung personenbezogener Daten zum Teil gesetzlich
                 vorgeschrieben ist (z.B. Steuervorschriften) oder sich auch aus vertraglichen Regelungen (z.B. Angaben
@@ -887,7 +937,9 @@ Landing page.
                 Vertragsabschluss erforderlich ist, ob eine Verpflichtung besteht, die personenbezogenen Daten
                 bereitzustellen, und welche Folgen die Nichtbereitstellung der personenbezogenen Daten hätte.
             </p>
-            <h4>15. Bestehen einer automatisierten Entscheidungsfindung</h4>
+            <p>
+                <strong>15. Bestehen einer automatisierten Entscheidungsfindung</strong>
+            </p>
             <p>
                 Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder
                 ein Profiling.
@@ -902,9 +954,11 @@ Landing page.
         </article>
     </section>
     <footer>
-        <p>behere.design</p>
         <p>
-            <a href='#legal'>Legal</a>
+            <a class='brand' href='//valo.media'>by valo.media</a>
+        </p>
+        <p>
+            <a href='#legal'>rechtliches</a>
         </p>
     </footer>
 </main>
