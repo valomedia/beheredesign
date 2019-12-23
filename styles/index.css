@@ -6,7 +6,6 @@ html {
     background-color: black;
     font-family: sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 a {
@@ -106,7 +105,8 @@ header img {
 }
 
 h1 {
-    position: absolute;
+    z-index: -10;
+    position: fixed;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
