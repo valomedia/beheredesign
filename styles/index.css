@@ -6,6 +6,7 @@ html {
     background-color: black;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
