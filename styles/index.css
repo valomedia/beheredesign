@@ -3,7 +3,6 @@
  */
 
 html {
-    background-color: black;
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
@@ -124,6 +123,21 @@ h1 {
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+}
+
+#void {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    animation-name: fade;
+    animation-direction: reverse;
+    animation-timing-function: step-end;
+    animation-delay: 2000ms;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
 }
 
 #ring, #circle-black, #circle-white {
