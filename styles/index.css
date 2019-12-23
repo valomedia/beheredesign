@@ -57,7 +57,6 @@ footer p:last-child {
 }
 
 #legal {
-    margin-top: 100vh;
     padding: 1em;
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -101,14 +100,15 @@ header img {
 }
 
 #landing {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
     position: absolute;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-h1 {
     font-family: "acumin-pro-wide", sans-serif;
     font-weight: 100;
     font-style: italic;
