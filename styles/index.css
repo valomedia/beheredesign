@@ -12,7 +12,7 @@ a {
 }
 
 main {
-    animation-name: fade;
+    animation-name: fade-in;
     animation-duration: 800ms;
     animation-delay: 2000ms;
     animation-timing-function: linear;
@@ -126,14 +126,14 @@ h1 {
 }
 
 #void {
+    z-index: -40;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: black;
-    animation-name: fade;
-    animation-direction: reverse;
+    animation-name: fade-out;
     animation-timing-function: step-end;
     animation-delay: 2000ms;
     animation-duration: 800ms;
@@ -178,13 +178,24 @@ ul {
     animation-fill-mode: both;
 }
 
-@keyframes fade {
+@keyframes fade-in {
     from {
         opacity: 0;
     }
 
     to {
         opacity: 100%;
+    }
+}
+
+/* Needed b/c combining animation-direction with animation-fill-mode is apparently broken in Safari. */
+@keyframes fade-out {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
