@@ -1,0 +1,57 @@
+/*
+ * Styles for the legal page.
+ */
+
+@media (max-device-width: 359px) {
+    #legal nav ul {
+        list-style: initial;
+        padding: initial;
+    }
+
+    #legal nav li {
+        display: initial;
+    }
+
+    #legal nav li::after {
+        content: '';
+    }
+}
+
+@media (min-device-width: 1280px) {
+    #legal::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #legal {
+        padding: 5vw;
+        box-sizing: border-box;
+    }
+
+    article {
+        float: left;
+        width: 30vw;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+
+    article:first-of-type {
+        padding-left: 0;
+    }
+
+    article:last-of-type {
+        padding-right: 0;
+    }
+}
+
+@media (min-device-width: 600px) and (max-device-width: 1279px) {
+    #legal {
+        width: 600px;
+        margin: auto;
+    }
+}
