@@ -128,7 +128,20 @@ header {
     text-align: right;
 }
 
-header img {
+header p:first-child {
+    float: left;
+}
+
+header p:last-child {
+    float: right;
+    margin: .6em;
+}
+
+header p:first-child img {
+    height: 2.4em;
+}
+
+header p:last-child img {
     height: 1.2em;
 }
 
